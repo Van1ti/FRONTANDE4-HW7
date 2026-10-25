@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>handlebars-app</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <h1>Список продуктів</h1>
+
+  <form class="form" id="product-form">
+    <input type="text" name="name" placeholder="Назва товару" required />
+    <input type="number" name="price" placeholder="Ціна" required />
+    <input type="text" name="description" placeholder="Опис товару" required />
+    <button type="submit">Додати товар</button>
+  </form>
+
+  <ul class="products-list" id="products-container"></ul>
+
+  <script type="module" src="/src/main.js"></script>
+  <script id="product-template" type="text/x-handlebars-template">
+  {{#each this}}
+    <li class="product-card" data-id="{{id}}">
+      <h3>{{name}}</h3>
+      <p>Ціна: ${{price}}</p>
+      <p>{{description}}</p>
+      <button class="delete-btn" type="button">Видалити</button>
+    </li>
+  {{/each}}
+</script>
+</body>
+
+</html>

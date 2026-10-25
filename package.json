@@ -1,0 +1,27 @@
+{
+  "name": "frontande4-hw7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Van1ti/FRONTANDE4-HW7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Van1ti/FRONTANDE4-HW7/issues"
+  },
+  "homepage": "https://github.com/Van1ti/FRONTANDE4-HW7#readme",
+  "dependencies": {
+    "handlebars": "^4.7.10"
+  },
+  "devDependencies": {
+    "vite-plugin-handlebars-precompile": "^1.0.1"
+  }
+}
